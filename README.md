@@ -36,3 +36,17 @@ Just the commands are good till the next restart - we need to change them in /et
 
 ## DNS
 
+You just giving a names to the IP addresses in the hosts file.
+This way I'm just giving 127.0.0.1 that is localhost the google.com ... names
+Name Resolution - translating host name to IP address
+
+/etc/hosts
+
+```192.168.1.11     db```
+
+All these entries moved to a server - DNS server.
+
+Pointing host to the DNS server:
+``` nameserver          192.168.1.100```
+
+The first it looks at /etc/hosts and if not finds next in DNS server.
